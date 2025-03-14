@@ -693,6 +693,9 @@ require('lazy').setup({
         },
       }
 
+      -- Manually set up gleam with lspconfig
+      require('lspconfig').gleam.setup { capabilities = capabilities }
+
       -- Ensure the servers and tools above are installed
       --
       -- To check the current status of installed tools and/or manually install
